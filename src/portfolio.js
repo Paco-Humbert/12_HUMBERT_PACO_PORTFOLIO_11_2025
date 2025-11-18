@@ -4,7 +4,7 @@ const header = {
 }
 
 const about = {
-  name: 'Image ordinateur',
+  name: 'Paco Humbert',
   role: 'Web Integrator',
   picture: 'image_PF.webp',
 
@@ -45,7 +45,7 @@ const projects = [
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 3',
+    name: 'Project 4',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
     stack: ['SASS', 'React'],
