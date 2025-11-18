@@ -6,7 +6,7 @@ const Footer = () => (
       href='https://github.com/Paco-Humbert/12_HUMBERT_PACO_PORTFOLIO_11_2025'
       className='link footer__link'
     >
-      Made by Paco HUMBERT
+      Made by Paco Humbert
     </a>
   </footer>
 )

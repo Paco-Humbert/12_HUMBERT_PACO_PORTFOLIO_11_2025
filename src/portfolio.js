@@ -4,9 +4,9 @@ const header = {
 }
 
 const about = {
-  name: 'Paco Humbert',
+  name: 'Image ordinateur',
   role: 'Web Integrator',
-  picture: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
+  picture: 'image_PF.webp',
 
   description:
     'I completed the Web Integrator program at OpenClassrooms, where I developed solid skills in front-end development, responsive integration, accessibility, SEO, debugging, and React.',

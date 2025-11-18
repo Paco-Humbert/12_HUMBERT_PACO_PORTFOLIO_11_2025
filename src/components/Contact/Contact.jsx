@@ -32,33 +32,30 @@ const Contact = () => {
       <h2 className='section__title'>Contact</h2>
 
       <form className='contact-form' onSubmit={handleSubmit}>
-        <label htmlFor="name">Your Name</label>
+        <label htmlFor="name">Name</label>
         <input
           id="name"
           type='text'
           name='name'
-          placeholder='Your Name'
           value={formData.name}
           onChange={handleChange}
           required
         />
 
-        <label htmlFor="email">Your Email</label>
+        <label htmlFor="email">Email</label>
         <input
           id="email"
           type='email'
           name='email'
-          placeholder='Your Email'
           value={formData.email}
           onChange={handleChange}
           required
         />
 
-        <label htmlFor="message">Your Message</label>
+        <label htmlFor="message">Message</label>
         <textarea
           id="message"
           name='message'
-          placeholder='Your Message'
           value={formData.message}
           onChange={handleChange}
           required
