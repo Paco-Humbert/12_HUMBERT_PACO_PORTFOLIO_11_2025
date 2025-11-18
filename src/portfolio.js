@@ -21,14 +21,14 @@ const projects = [
   {
     name: 'Argent Bank',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'Implémentez le front-end dans une application bancaire avec React',
     stack: ['SASS', 'React'],
     sourceCode: 'https://github.com/Paco-Humbert/10_HUMBERT_PACO_ARGENTBANK_09_2025',
     livePreview: 'https://github.com',
     
   },
   {
-    name: 'Project 2',
+    name: 'Project 3',
     description:
       'Implémentez le front-end dans une application bancaire avec React',
     stack: ['SASS', 'React'],
