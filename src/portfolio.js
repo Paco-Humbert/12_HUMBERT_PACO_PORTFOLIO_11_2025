@@ -19,18 +19,18 @@ const about = {
 
 const projects = [
   {
-    name: 'Project 1',
+    name: 'Argent Bank',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
     stack: ['SASS', 'React'],
-    sourceCode: 'https://github.com',
+    sourceCode: 'https://github.com/Paco-Humbert/10_HUMBERT_PACO_ARGENTBANK_09_2025',
     livePreview: 'https://github.com',
     
   },
   {
     name: 'Project 2',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+      'Implémentez le front-end dans une application bancaire avec React',
     stack: ['SASS', 'React'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
@@ -46,6 +46,22 @@ const projects = [
   },
   {
     name: 'Project 4',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['SASS', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Project 5',
+    description:
+      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    stack: ['SASS', 'React'],
+    sourceCode: 'https://github.com',
+    livePreview: 'https://github.com',
+  },
+  {
+    name: 'Project 6',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
     stack: ['SASS', 'React'],
