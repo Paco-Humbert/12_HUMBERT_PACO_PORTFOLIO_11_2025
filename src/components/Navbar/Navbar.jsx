@@ -1,4 +1,3 @@
-// src/components/Navbar/Navbar.jsx
 import { useContext, useState } from 'react'
 import { ThemeContext } from '../../contexts/theme.jsx'
 import { projects, skills, contact } from '../../portfolio'

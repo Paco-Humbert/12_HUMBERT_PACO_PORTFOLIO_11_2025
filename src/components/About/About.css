@@ -3,6 +3,26 @@
   margin-top: 3em;
 }
 
+@media (max-width: 600px) {
+  .about {
+    margin-top: 2em;
+  }
+
+  .about__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about__intro {
+    align-items: center;         
+  }
+
+  .about__desc {
+    max-width: 100%;
+  }
+}
+
 .about__name {
   color: var(--clr-primary);
 }
@@ -38,14 +58,14 @@
 .about__header {
   display: flex;
   align-items: center;
-  gap: 1.5rem; /* space between picture and text */
+  gap: 1.5rem; 
   margin-bottom: 1.5rem;
 }
 
 .about__picture {
   width: 180px;
   height: 180px;
-  border-radius: 70%;   /* round profile */
+  border-radius: 70%;   
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
