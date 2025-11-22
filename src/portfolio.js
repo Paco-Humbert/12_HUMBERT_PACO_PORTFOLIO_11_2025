@@ -22,50 +22,50 @@ const projects = [
     name: 'Argent Bank',
     description:
       'Implémentez le front-end dans une application bancaire avec React',
-    stack: ['SASS', 'React'],
+    stack: ['SASS', 'React', 'JavaScript', 'Redux'],
     sourceCode: 'https://github.com/Paco-Humbert/10_HUMBERT_PACO_ARGENTBANK_09_2025',
     livePreview: 'https://github.com',
     
   },
   {
-    name: 'Project 3',
+    name: 'KASA',
     description:
-      'Implémentez le front-end dans une application bancaire avec React',
+      'Créez une application web de location immobilière avec React',
     stack: ['SASS', 'React'],
-    sourceCode: 'https://github.com',
+    sourceCode: 'https://github.com/Paco-Humbert/7_Humbert_Paco_KASA_062025',
     livePreview: 'https://github.com',
     
   },
   {
-    name: 'Project 3',
+    name: 'Architecte Sophie Bluel',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'React'],
-    sourceCode: 'https://github.com',
+      'Créer une page web dynamique avec JavaScript',
+    stack: ['SASS', 'JavaScript'],
+    sourceCode: 'https://github.com/Paco-Humbert/6_Humbert_Paco_architecte-sophie-bluel_052025',
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 4',
+    name: 'Nina Carducci',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'React'],
-    sourceCode: 'https://github.com',
+      'Optimisation et débuggage du site de la photographe professionnelle Nina Carducci',
+    stack: ['SASS', 'JavaScript', 'SEO', 'Accessibility'],
+    sourceCode: 'https://github.com/Paco-Humbert/8_Humbert_Paco_Nina_Carducci_072025',
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 5',
+    name: '724 Events',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'React'],
-    sourceCode: 'https://github.com',
+      'Installez React Developer Tools, réparez les bugs. Rédigez le cahier de recette',
+    stack: ['Debugging', 'Unit Testing', 'JavaScript'],
+    sourceCode: 'https://github.com/Paco-Humbert/9_HUMBERT_PACO_724Events_082025',
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 6',
+    name: 'OH My Food',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'React'],
-    sourceCode: 'https://github.com',
+      'Développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.',
+    stack: ['Responsive Design','SASS','HTML','Figma'],
+    sourceCode: 'https://github.com/Paco-Humbert/3_HUMBERT_PACO_OHMYFOOD_042025',
     livePreview: 'https://github.com',
   },
 ]
@@ -82,6 +82,9 @@ const skills = [
   'Design-to-Code Implementation',
   'SEO',
   'Figma',
+  'Debugging',
+  'Unit Testing',
+  'Git, GitHub'
 ]
 
 const contact = {
