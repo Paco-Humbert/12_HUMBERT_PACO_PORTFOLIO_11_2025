@@ -136,9 +136,9 @@ const projects = [
 
 const skills = ['SQL', 'SQLite', 'Python', 'pandas', 'NumPy', 'Matplotlib', 'scikit-learn', 'Power BI', 'Power Query', 'DAX']
 const skillGroups = [
-  { name: 'Préparer & analyser', items: ['SQL', 'SQLite', 'Python', 'pandas', 'NumPy', 'Statistiques', 'scikit-learn'] },
-  { name: 'Visualiser & restituer', items: ['Power BI', 'Power Query', 'DAX', 'Matplotlib', 'Excel', 'Communication métier'] },
-  { name: 'Développer & partager', items: webSkills },
+  { name: 'Analyse & préparation des données', items: ['SQL', 'SQLite', 'Python', 'pandas', 'NumPy', 'Statistiques', 'scikit-learn'] },
+  { name: 'Business Intelligence & reporting', items: ['Power BI', 'Power Query', 'DAX', 'Matplotlib', 'Excel', 'Communication métier'] },
+  { name: 'Intégration & développement web', items: webSkills },
 ]
 
 export { header, about, projects, webProjects, skills, skillGroups, contact }
