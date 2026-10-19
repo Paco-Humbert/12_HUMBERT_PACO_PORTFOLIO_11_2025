@@ -1,7 +1,9 @@
+import { useLanguage } from '../../contexts/language.jsx'
 import { useEffect, useState } from 'react'
 import './ScrollToTop.css'
 
 const ScrollToTop = () => {
+  const { t } = useLanguage()
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -17,7 +19,7 @@ const ScrollToTop = () => {
 
   return (
     <div className='scroll-top'>
-      <a href='#top' aria-label='Revenir en haut de la page'>
+      <a href='#top' aria-label={t('Revenir en haut de la page')}>
         <span style={{ fontSize: '1.8rem' }}>↑</span>
       </a>
     </div>

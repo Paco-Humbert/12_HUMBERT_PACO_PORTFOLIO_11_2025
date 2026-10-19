@@ -1,3 +1,4 @@
+import { useLanguage } from './contexts/language.jsx'
 import { useContext } from 'react'
 import { ThemeContext } from './contexts/theme.jsx'
 import Header from './components/Header/Header.jsx'
@@ -10,11 +11,12 @@ import Footer from './components/Footer/Footer.jsx'
 import './App.css'
 
 const App = () => {
+  const { t } = useLanguage()
   const { themeName } = useContext(ThemeContext)
 
   return (
     <div id='top' className={`${themeName} app`}>
-      <a href='#main' className='skip-link'>Aller au contenu</a>
+      <a href='#main' className='skip-link'>{t('Aller au contenu')}</a>
       <Header />
 
       <main id='main'>

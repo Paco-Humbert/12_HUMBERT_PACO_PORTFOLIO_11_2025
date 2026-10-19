@@ -1,8 +1,10 @@
+import { useLanguage } from '../../contexts/language.jsx'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import { about } from '../../portfolio'
 import './About.css'
 
 const About = () => {
+  const { t } = useLanguage()
   if (!about) return null
 
   const { name, role, description, social, picture } = about
@@ -37,13 +39,13 @@ const About = () => {
 
           {role && (
             <p className='about__role'>
-              Analyser la performance. Identifier les leviers d’action.
+              {t('Analyser la performance. Identifier les leviers d’action.')}
               <br />
-              Éclairer les décisions.
+              {t('Éclairer les décisions.')}
             </p>
           )}
 
-          {description && <p className='about__desc'>{description}</p>}
+          {description && <p className='about__desc'>{t(description)}</p>}
         </div>
       </div>
 
@@ -54,7 +56,7 @@ const About = () => {
             {social.github && (
               <a
                 href={social.github}
-                aria-label='Profil GitHub de Paco Humbert (nouvel onglet)'
+                aria-label={t('Profil GitHub de Paco Humbert (nouvel onglet)')}
                 className='link link--icon'
                 target='_blank'
                 rel='noreferrer'
@@ -66,7 +68,7 @@ const About = () => {
             {social.linkedin && (
               <a
                 href={social.linkedin}
-                aria-label='Profil LinkedIn de Paco Humbert (nouvel onglet)'
+                aria-label={t('Profil LinkedIn de Paco Humbert (nouvel onglet)')}
                 className='link link--icon'
                 target='_blank'
                 rel='noreferrer'
