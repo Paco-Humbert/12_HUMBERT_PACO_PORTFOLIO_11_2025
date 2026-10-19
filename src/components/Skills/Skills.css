@@ -1,5 +1,108 @@
-.skills__groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
-.skills__group h3 { font-size: 1.15rem; margin-bottom: 1rem; }
-.skills__list { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; }
-.skills__list-item { font-size: 0.9rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--clr-primary); }
-@media (max-width: 700px) { .skills__groups { grid-template-columns: 1fr; } }
+.skills {
+  scroll-margin-top: 2rem;
+}
+
+.skills .skills__groups {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.skills .skills__group {
+  min-width: 0;
+  padding: 1.5rem;
+  background-color: var(--clr-bg-alt);
+  border: 1px solid var(--clr-fg);
+  border-color: color-mix(in srgb, var(--clr-fg) 18%, transparent);
+  border-radius: 1rem;
+}
+
+.skills .skills__group-title {
+  margin: 0 0 1.25rem;
+  padding: 0 0 0 0.8rem;
+  border-left: 3px solid var(--clr-primary);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.skills .skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.65rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills .skills__list-item {
+  position: static;
+  flex: 0 1 auto;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
+  padding: 0.45rem 0.75rem;
+  border: 0;
+  border-radius: 0.5rem;
+  background-color: var(--clr-bg);
+  color: var(--clr-fg-alt);
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  box-shadow: none;
+  transform: none;
+}
+
+.skills .skills__transversal {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.skills .skills__transversal h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.skills .skills__qualities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem 1.5rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.skills .skills__qualities li {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .skills .skills__groups {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+  }
+
+  .skills .skills__group {
+    padding: 1.25rem;
+  }
+
+  .skills .skills__transversal {
+    padding: 1rem 0;
+  }
+}
