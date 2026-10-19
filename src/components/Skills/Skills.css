@@ -1,5 +1,8 @@
-.skills__groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; }
-.skills__group h3 { font-size: 1.15rem; margin-bottom: 1rem; }
+.skills__groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem; }
+.skills__category { font-size: 1.3rem; margin-bottom: 1.8rem; }
+.skills__category span { display: block; margin-top: 0.4rem; font-size: 0.85rem; font-weight: 400; color: var(--clr-fg); }
+.skills__group h4 { font-size: 1.1rem; margin-bottom: 1rem; }
+.skills__soft { margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid var(--clr-primary); }
 .skills__list { display: flex; flex-wrap: wrap; gap: 0.6rem 1rem; }
 .skills__list-item { font-size: 0.9rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--clr-primary); }
 @media (max-width: 700px) { .skills__groups { grid-template-columns: 1fr; } }

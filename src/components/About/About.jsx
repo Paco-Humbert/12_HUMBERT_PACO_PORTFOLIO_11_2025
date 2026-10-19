@@ -42,7 +42,7 @@ const About = () => {
       </div>
 
       <div className='about__contact center'>
-        <a href='#projects' className='btn btn--outline'>Découvrir les projets BI</a>
+        <a href='#projects' className='btn btn--outline'>Découvrir mes projets </a>
 
         {social && (
           <>
