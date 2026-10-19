@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <section className='section skills' id='skills'>
       <h2 className='section__title'>Compétences</h2>
-      <h3 className='skills__category'>Compétences techniques & fonctionnelles <span>Hard skills</span></h3>
+      <h3 className='skills__category'>Compétences techniques & fonctionnelles </h3>
       <div className='skills__groups'>
         {skillGroups.map((group) => (
           <div className='skills__group' key={group.name}>
@@ -19,7 +19,7 @@ const Skills = () => {
         ))}
       </div>
       <div className='skills__soft'>
-        <h3 className='skills__category'>Compétences transversales <span>Soft skills</span></h3>
+        <h3 className='skills__category'>Compétences transversales </h3>
         <ul className='skills__list'>
           {softSkills.map((skill) => <li key={skill} className='skills__list-item'>{skill}</li>)}
         </ul>
