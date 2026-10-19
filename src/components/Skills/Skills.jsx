@@ -4,12 +4,12 @@ const skillGroups = [
   {
     id: 'data',
     name: 'Analyse des données',
-    items: ['SQL', 'SQLite', 'Python', 'pandas', 'NumPy', 'Statistiques', 'scikit-learn', 'Contrôle qualité'],
+    items: ['SQL', 'SQLite', 'Python', 'pandas', 'Statistiques', 'Contrôle qualité'],
   },
   {
     id: 'bi',
     name: 'Business Intelligence',
-    items: ['Power BI', 'Power Query', 'DAX', 'Excel', 'Matplotlib', 'Tableaux de bord'],
+    items: ['Power BI', 'Power Query', 'DAX', 'Excel', 'Tableaux de bord'],
   },
   {
     id: 'business',
