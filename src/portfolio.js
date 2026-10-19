@@ -9,7 +9,7 @@ const about = {
   picture: 'image_PF.webp',
 
   description:
-    'Après un premier parcours en intégration web, je poursuis ma formation en Business Intelligence chez OpenClassrooms. J’utilise SQL, Python et Power BI pour préparer les données, analyser une problématique métier et rendre les résultats compréhensibles.',
+    'Après un premier parcours en intégration web, je poursuis ma formation en Business Intelligence. J’utilise SQL, Python et Power BI pour préparer les données, analyser une problématique métier et rendre les résultats compréhensibles.',
 
   social: {
     linkedin: 'https://www.linkedin.com/in/paco-humbert-52738894/',
