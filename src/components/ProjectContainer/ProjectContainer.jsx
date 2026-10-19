@@ -11,7 +11,9 @@ const ProjectContainer = ({ project }) => {
       {imageSrc && (
         <figure className='project__figure'>
           <img src={imageSrc} alt={project.imageAlt} loading='lazy' width='640' height='360' />
+          {project.imageKind !== 'web' && (
           <figcaption>{project.imageCaption}</figcaption>
+          )}
         </figure>
       )}
       <div className='project__body'>
