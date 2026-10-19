@@ -5,11 +5,11 @@ const header = {
 
 const about = {
   name: 'Paco Humbert',
-  role: 'Business Intelligence & analyse de données',
+  role: 'Analyser la performance. Identifier les leviers d’action. Éclairer les décisions.',
   picture: 'image_PF.webp',
 
   description:
-    'Après un premier parcours en intégration web, je poursuis ma formation en Business Intelligence chez OpenClassrooms. J’utilise SQL, Python et Power BI pour préparer les données, analyser une problématique métier et rendre les résultats compréhensibles.',
+    'Business Intelligence Analyst, j’associe compréhension des besoins métier, fiabilité des données et restitution des résultats. Je mobilise SQL, Python et Power BI pour analyser les écarts de performance et formuler des recommandations argumentées. Mon parcours en intégration web renforce cette approche par une attention particulière à la lisibilité des tableaux de bord et à leur simplicité d’utilisation.',
 
   social: {
     linkedin: 'https://www.linkedin.com/in/paco-humbert-52738894/',
