@@ -66,6 +66,19 @@ const Navbar = () => {
         )}
       </ul>
 
+
+
+      <button
+        type='button'
+        onClick={toggleTheme}
+        className='btn btn--icon nav__theme'
+        aria-label={t(themeName === 'dark' ? 'Activer le thème clair' : 'Activer le thème sombre')}
+      >
+        <span className='nav__theme-icon'>
+          {themeName === 'dark' ? '☀️' : '🌙'}
+        </span>
+      </button>
+
       <div className='nav__languages' role='group' aria-label={t('Langue du site')}>
         {['fr', 'en'].map((code) => (
           <button
@@ -81,17 +94,6 @@ const Navbar = () => {
           </button>
         ))}
       </div>
-
-      <button
-        type='button'
-        onClick={toggleTheme}
-        className='btn btn--icon nav__theme'
-        aria-label={t(themeName === 'dark' ? 'Activer le thème clair' : 'Activer le thème sombre')}
-      >
-        <span className='nav__theme-icon'>
-          {themeName === 'dark' ? '☀️' : '🌙'}
-        </span>
-      </button>
 
       <button
         type='button'
