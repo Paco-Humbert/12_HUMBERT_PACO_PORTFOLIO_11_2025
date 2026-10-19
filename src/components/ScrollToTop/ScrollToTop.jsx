@@ -17,7 +17,7 @@ const ScrollToTop = () => {
 
   return (
     <div className='scroll-top'>
-      <a href='#top' aria-label='Back to top'>
+      <a href='#top' aria-label='Revenir en haut de la page'>
         <span style={{ fontSize: '1.8rem' }}>↑</span>
       </a>
     </div>

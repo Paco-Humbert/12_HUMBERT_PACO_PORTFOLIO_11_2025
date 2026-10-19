@@ -1,33 +1,33 @@
 .project {
-  padding: 2em;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s linear;
-}
-
-.project:hover {
-  transform: translateY(-7px);
-}
-
-.project__description {
-  margin-top: 1em;
-}
-
-.project__stack {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 1.2em 0;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  background: var(--clr-bg-alt);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  transition: transform 0.2s ease;
 }
-
-.project__stack-item {
-  margin: 0.5em;
-  font-weight: 500;
-  font-size: 0.8rem;
-  color: var(--clr-fg-alt);
+.project:hover { transform: translateY(-4px); }
+.project__figure { background: #fff; color: #555; }
+.project__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  padding: 0.7rem;
+  background: #fff;
 }
-
-.project .link--icon {
-  margin-left: 0.5em;
-}
+.project__figure figcaption { padding: 0.35rem 1rem 0.65rem; font-size: 0.75rem; background: #f4f5f7; }
+.project__body { padding: 1.6rem; display: flex; flex-direction: column; flex: 1; }
+.project__label { color: var(--clr-primary); font-size: 0.8rem; font-weight: 600; margin-bottom: 0.65rem; letter-spacing: 0.04em; }
+.project h3 { font-size: 1.4rem; line-height: 1.3; }
+.project__category { font-size: 0.85rem; margin-top: 0.55rem; color: var(--clr-primary); }
+.project__description { margin-top: 1.1rem; }
+.project__outcome { margin-top: 1.1rem; padding-left: 0.8rem; border-left: 3px solid var(--clr-primary); font-weight: 500; color: var(--clr-fg-alt); }
+.project__note { font-size: 0.8rem; margin-top: 0.65rem; }
+.project__stack { display: flex; flex-wrap: wrap; gap: 0.45rem 0.85rem; margin: 1.3rem 0; }
+.project__stack-item { font-size: 0.8rem; color: var(--clr-fg-alt); }
+.project__links { margin-top: auto; display: flex; flex-wrap: wrap; gap: 1rem; padding-top: 0.6rem; }
+.project__source { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 600; }

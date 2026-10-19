@@ -14,9 +14,10 @@ const App = () => {
 
   return (
     <div id='top' className={`${themeName} app`}>
+      <a href='#main' className='skip-link'>Aller au contenu</a>
       <Header />
 
-      <main>
+      <main id='main'>
         <About />
         <Projects />
         <Skills />
