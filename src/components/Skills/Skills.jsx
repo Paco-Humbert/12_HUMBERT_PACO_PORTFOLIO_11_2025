@@ -5,7 +5,7 @@ const skillGroups = [
   {
     id: 'data',
     name: 'Analyse des données',
-    items: ['SQL', 'SQLite', 'Python', 'pandas', 'Statistiques', 'Contrôle qualité'],
+    items: ['SQL', 'SQLite', 'Python', 'Jupyter Notebook', 'pandas', 'Statistiques', 'Contrôle qualité'],
   },
   {
     id: 'bi',
