@@ -35,7 +35,13 @@ const About = () => {
             </h1>
           )}
 
-          {role && <p className='about__role'>{role}</p>}
+          {role && (
+            <p className='about__role'>
+              Analyser la performance. Identifier les leviers d’action.
+              <br />
+              Éclairer les décisions.
+            </p>
+          )}
 
           {description && <p className='about__desc'>{description}</p>}
         </div>
