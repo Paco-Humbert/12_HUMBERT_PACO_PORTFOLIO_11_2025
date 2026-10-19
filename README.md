@@ -31,11 +31,18 @@ Le dossier `dist/` contient le site construit. Le projet utilise des chemins rel
 
 | Image du site | Livrable d’origine |
 |---|---|
-| `public/images/p5-modele.jpg` | P5 : `documentation/Schema_CustomerData.jpg` |
+| `public/images/p5-satisfaction.svg` | P5 : notes moyennes calculées depuis `data/CustomerDataFeedback.db` |
 | `public/images/p6-correlation.png` | P6 : matrice de corrélation issue du notebook BottleNeck |
 | `public/images/p8-predictions.png` | P8 : graphique des valeurs réelles et prédites issu du notebook immobilier |
-| `public/images/p7-modele.jpg` | P7 : `vue_modèle.jpg`, modèle du rapport Power BI |
-| `public/images/p9-modele.png` | P9 : rendu de la zone du schéma dans `Schéma de la base de données.pdf` |
+| `public/images/p7-couts.svg` | P7 : coûts prévus et réels du fichier source Sanitoral, agrégés par type de projet |
+| `public/images/p9-ventes.svg` | P9 : chiffre d’affaires catalogue estimé depuis les exports Finance et Sales |
+| `public/images/web-*` | Images utilisées dans les six sites web, récupérées depuis leurs dépôts |
+
+Les graphiques P5, P7 et P9 ont été créés pour ce portfolio à partir des données des livrables. Ce sont des illustrations analytiques, pas des captures des rapports Power BI. Les images web sont des visuels des sites, pas des captures de leurs interfaces. La provenance et les calculs sont détaillés dans [documentation/visuels.md](documentation/visuels.md).
+
+## Compétences
+
+Les compétences techniques et fonctionnelles (hard skills) sont séparées des compétences transversales (soft skills). « Analyse des besoins métier » figure dans le cadrage fonctionnel. Les bibliothèques Python généralistes ne sont plus listées comme compétences indépendantes ; scikit-learn reste associé au projet prédictif P8.
 
 Les livrables des projets restent dans leurs dépôts respectifs ; cette mise à jour porte sur le portfolio.
 
