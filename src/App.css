@@ -149,3 +149,14 @@ main {
     margin-top: 4em;
   }
 }
+
+.app { min-height: 100vh; }
+.btn, .link--nav { text-transform: none; }
+:focus-visible { outline: 3px solid var(--clr-primary); outline-offset: 5px; }
+.skip-link { position: fixed; top: 0.7rem; left: 1rem; padding: 0.7rem; background: var(--clr-bg-alt); color: var(--clr-fg-alt); transform: translateY(-180%); z-index: 10; }
+.skip-link:focus { transform: translateY(0); }
+@media (max-width: 600px) { main, .header { width: 90%; } }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}

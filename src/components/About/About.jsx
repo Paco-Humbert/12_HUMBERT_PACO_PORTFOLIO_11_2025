@@ -11,11 +11,11 @@ const About = () => {
     picture && picture.startsWith('http')
       ? picture
       : picture
-      ? `/images/${picture}`
+      ? `${import.meta.env.BASE_URL}images/${picture}`
       : null
 
   return (
-    <div className='about center'>
+    <section className='about center' aria-labelledby='about-title'>
       <div className='about__header'>
         {pictureSrc && (
           <img
@@ -30,26 +30,26 @@ const About = () => {
 
         <div className='about__intro'>
           {name && (
-            <h1>
-              Hi, I am <span className='about__name'>{name}.</span>
+            <h1 id='about-title'>
+              <span className='about__name'>{name}</span>
             </h1>
           )}
 
-          {role && <h2 className='about__role'>A {role}.</h2>}
+          {role && <p className='about__role'>{role}</p>}
 
           {description && <p className='about__desc'>{description}</p>}
         </div>
       </div>
 
       <div className='about__contact center'>
-        
+        <a href='#projects' className='btn btn--outline'>Découvrir les projets BI</a>
 
         {social && (
           <>
             {social.github && (
               <a
                 href={social.github}
-                aria-label='github'
+                aria-label='Profil GitHub de Paco Humbert (nouvel onglet)'
                 className='link link--icon'
                 target='_blank'
                 rel='noreferrer'
@@ -61,7 +61,7 @@ const About = () => {
             {social.linkedin && (
               <a
                 href={social.linkedin}
-                aria-label='linkedin'
+                aria-label='Profil LinkedIn de Paco Humbert (nouvel onglet)'
                 className='link link--icon'
                 target='_blank'
                 rel='noreferrer'
@@ -72,7 +72,7 @@ const About = () => {
           </>
         )}
       </div>
-    </div>
+    </section>
   )
 }
 

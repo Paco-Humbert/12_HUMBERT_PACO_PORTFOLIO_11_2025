@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { ThemeContext } from '../../contexts/theme.jsx'
 import { projects, skills, contact } from '../../portfolio'
 import './Navbar.css'
@@ -12,11 +12,19 @@ const Navbar = () => {
   }
 
   const closeNav = () => setShowNavList(false)
+  useEffect(() => {
+    const onKeyDown = (event) => {
+      if (event.key === 'Escape') setShowNavList(false)
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [])
 
   return (
-    <nav className='center nav'>
+    <nav className='center nav' aria-label='Navigation principale'>
       <ul
         className='nav__list'
+        id='main-navigation'
         style={{ display: showNavList ? 'flex' : undefined }}
       >
         {projects.length > 0 && (
@@ -26,7 +34,7 @@ const Navbar = () => {
               onClick={closeNav}
               className='link link--nav'
             >
-              Projects
+              Projets
             </a>
           </li>
         )}
@@ -38,7 +46,7 @@ const Navbar = () => {
               onClick={closeNav}
               className='link link--nav'
             >
-              Skills
+              Compétences
             </a>
           </li>
         )}
@@ -60,7 +68,7 @@ const Navbar = () => {
         type='button'
         onClick={toggleTheme}
         className='btn btn--icon nav__theme'
-        aria-label='toggle theme'
+        aria-label={themeName === 'dark' ? 'Activer le thème clair' : 'Activer le thème sombre'}
       >
         <span className='nav__theme-icon'>
           {themeName === 'dark' ? '☀️' : '🌙'}
@@ -71,7 +79,9 @@ const Navbar = () => {
         type='button'
         onClick={toggleNavList}
         className='btn btn--icon nav__hamburger'
-        aria-label='toggle navigation'
+        aria-label={showNavList ? 'Fermer le menu' : 'Ouvrir le menu'}
+        aria-expanded={showNavList}
+        aria-controls='main-navigation'
       >
         <span className='nav__hamburger-icon'>
           {showNavList ? '✕' : '☰'}
