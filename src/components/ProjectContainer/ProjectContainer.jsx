@@ -7,11 +7,13 @@ const ProjectContainer = ({ project }) => {
   const imageSrc = project.image ? `${import.meta.env.BASE_URL}images/${project.image}` : null
 
   return (
-    <article className='project'>
+    <article className={`project${project.imageKind === 'web' ? ' project--web' : ''}`}>
       {imageSrc && (
         <figure className='project__figure'>
           <img src={imageSrc} alt={project.imageAlt} loading='lazy' width='640' height='360' />
+          {project.imageKind !== 'web' && (
           <figcaption>{project.imageCaption}</figcaption>
+          )}
         </figure>
       )}
       <div className='project__body'>
@@ -52,6 +54,7 @@ ProjectContainer.propTypes = {
     outcome: PropTypes.string,
     note: PropTypes.string,
     image: PropTypes.string,
+    imageKind: PropTypes.string,
     imageAlt: PropTypes.string,
     imageCaption: PropTypes.string,
     stack: PropTypes.arrayOf(PropTypes.string),

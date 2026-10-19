@@ -20,6 +20,7 @@
   background: #fff;
 }
 .project__figure figcaption { padding: 0.35rem 1rem 0.65rem; font-size: 0.75rem; background: #f4f5f7; }
+.project--web .project__figure img { object-fit: cover; padding: 0; }
 .project__body { padding: 1.6rem; display: flex; flex-direction: column; flex: 1; }
 .project__label { color: var(--clr-primary); font-size: 0.8rem; font-weight: 600; margin-bottom: 0.65rem; letter-spacing: 0.04em; }
 .project h3 { font-size: 1.4rem; line-height: 1.3; }
